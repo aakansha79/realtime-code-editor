@@ -1,0 +1,176 @@
+.homePageWrapper{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#3d6664;
+}
+
+.formWrapper{
+  background:#1c1e29;
+  padding:30px;
+  border-radius:10px;
+  width:400px;
+  max-width:90%;
+}
+
+.homeLogo{
+  height:100px;
+  margin-bottom:20px;
+}
+
+.inputGroup{
+  display:flex;
+  flex-direction:column;
+}
+
+.inputBox{
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  margin-bottom:14px;
+}
+
+.btn{
+  border:none;
+  padding:10px;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.joinBtn{
+  background:#4aed88;
+}
+
+.createInfo{
+  margin-top:10px;
+}
+
+footer{
+  position:fixed;
+  bottom:10px;
+  width:100%;
+  text-align:center;
+}
+
+footer span{
+  color:#4aed88;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* MAIN LAYOUT */
+
+.mainWrap {
+  height: 100vh;
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.aside {
+  width: 260px;
+  background: #1c1e29;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.logoSection img {
+  width: 180px;
+}
+
+/* DIVIDER LINE */
+
+.divider {
+  height: 1px;
+  background: #3a3d4a;
+  margin: 15px 0;
+}
+
+/* CONNECTED TITLE */
+
+.connectedTitle {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* CLIENT LIST */
+
+.clientsList {
+  flex: 1;
+}
+
+/* USER CARD */
+
+.clientCard {
+  margin-bottom: 15px;
+}
+
+/* USER AVATAR */
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* USERNAME */
+
+.username {
+  color: white;
+}
+
+/* BUTTONS */
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* COPY BUTTON */
+
+.copyBtn {
+  background: white;
+}
+
+/* LEAVE BUTTON */
+
+.leaveBtn {
+  background: #4aed88;
+}
+
+/* FOOTER BUTTON AREA */
+
+.sidebarFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* EDITOR AREA */
+
+.editorWrap {
+  flex: 1;
+  background: #282a36;
+}
