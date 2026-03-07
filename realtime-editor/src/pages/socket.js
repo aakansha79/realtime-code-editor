@@ -1,12 +1,21 @@
 import { io } from "socket.io-client";
 
+let socket;
+
 export const initSocket = async () => {
   const options = {
-    'force new connection': true,
-    reconnectionAttempt: 'Infinity',
+    forceNew: true,
+    reconnectionAttempts: "Infinity",
     timeout: 10000,
-    transports: ['websocket'],
+    transports: ["websocket"],
   };
 
-  return io("http://localhost:5000", options);
+  
+  socket = io(window.location.origin, options);
+
+  socket.on("connect_error", (err) => {
+    console.log("Socket connection failed:", err.message);
+  });
+
+  return socket;
 };
